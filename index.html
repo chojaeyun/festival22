@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        html {font-family: 'Bebas Neue', sans-serif;color:#282322}
+        body, h1,h2,h3, p {margin:0; padding:0;}
+        h1 {font-weight:900;font-size:80px; margin-bottom:5px; letter-spacing :5px;}
+        h2{font-size:48px; line-height: 1.2; margin-bottom: 10px;letter-spacing :2px;}
+        h3{font-size:30px; line-height: 1.5;}
+        p{font-size:20px;letter-spacing: -1px; word-spacing: -2px; line-height: 1.4; word-break: keep-all; }
+        section{position: relative;}
+        section .wrap{ position: relative;}
+        #monitor{position: fixed; background: black;padding: 5px; top:0; right:0;width: 70px;height:20px; color:white;}
+        
+
+        .wrap{width:1000px; margin:auto; height:600px;position:relative;}
+        .wrap2{width:1000px; margin:auto; height:600px;position:relative;}
+        .textbox{position:absolute;}
+        header .wrap {width:100%; height:900px;); overflow: hidden;}
+        #dj{position:absolute;width:400px; top:150px; left:700px;opacity: 1;}
+        #box1{position:absolute; top:160px;opacity: 1; z-index: 2;}
+        #button{width:200px; height:50px; border-bottom-right-radius: :200px; background-color:#FC3922;margin-top: 20px;}
+        #button:hover{background-color:#CE2410;}
+        .EDMpic{width:320px; height: 320px;margin-right:0px;background-color: red; border-radius: 100%;}
+        .EDMpic2{margin:0px;width:312px; height: 312px;background-color: red; border-radius: 100%; }
+        .EDMS {width:300px; margin-right:32px;display: block;float:left;}
+        
+        .EDMS h3{text-align: center; margin-top:40px;font-size: 25px;}
+        .EDMS p{text-align:center;font-size: 21px;}
+        #EDM {position:absolute; top:320px;opacity: 0; z-index:1;}
+        #back {width:100%; background-attachment: fixed;}
+        #head1 {position:fixed; width:300px;top:30px; left:68px;margin:0;opacity:0; z-index: 2;}
+        #lou{width:1400px;position: absolute; left: 500px; top:300px;opacity: 0;}
+        #text1{position: absolute; top:200px;}
+        #top1{position:sticky;left:0;top:-50px; width:100%; z-index:1; opacity: 0;}
+        #top2{width:20%;position:fixed;left:0px; top:400px;z-index:1;opacity: 0;}
+        #top3{width:30%;position:fixed;left:350px; top:400px;z-index:1;opacity: 0;}
+    
+        #text2{position:fixed; width:400px; z-index: 2; color:white; left:850px; top:250px; opacity:0;}
+        #text3{position: absolute; top:2000px; left: 850px;}
+        #cam{position:fixed;top:0; left:250px;}
+        #disert1{position: absolute;top:20px;}
+        #disert2{position: absolute;top:-70px; width:400px;left:50%;transform: translateX(-50%);opacity: 0;}
+        #disert3{position: absolute;top:-160px;width: 300px;left:50%;transform: translateX(-50%);opacity: 0;}
+        #text4{position: absolute;top:300px; left:50%;transform: translateX(-50%);top:}
+
+        @keyframes fly{
+            to{left:1000px; top:-500px; opacity: 0;}
+        }
+        @keyframes disappear{
+            to{opacity:0;top:130px;}
+        }
+        @keyframes disappear2{
+            from{opacity: 1;}
+            to{opacity: 0;}
+        }
+        @keyframes appear{
+            to{opacity: 1; top:70px;}
+        }
+        @keyframes appear2{
+            to{opacity: 1;}
+        }
+        @keyframes appear3{
+            to{opacity:1; top:200px;}
+        }
+        @keyframes big{
+            to{width:100%;}
+        }
+        @keyframes side{
+            to{left:300px; opacity: 1;}
+        }
+        @keyframes color{
+            to{color:white;}
+        }
+        @keyframes small{
+            to{width:40%;}
+        }
+        @keyframes disappear3{
+            from{width:40%;}
+            to{width:40%;opacity: 0;}
+        }
+
+        @keyframes dal{
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }
+        @keyframes dal2{
+            from{opacity: 1;}
+            to{opacity: 0;}
+        }
+        
+
+    </style>
+</head>
+<body id="page1" style="height: 800px;overflow: hidden;">
+    <header><div class="wrap">
+        <div id="monitor" style="z-index: 3;"></div>
+        <img src="dj.png" id="dj">
+        <div class="wrap2">
+            <div id="box1">
+            <h1>Enjoy the Music Festival</h1>
+            <p style="font-size: 23px;">어떻게 하면 재밌게 놀 수 있을까요?<br>페스티벌에서 색다른 경험, 추억을 만들어 보아요! </p>
+            <div id="button"><p style="color:white;text-align: center; line-height:50px;">즐기러 떠나기</p></div>
+            </div>
+            
+            <div id = EDM>
+                <h2 style="text-align: center;font-size: 48px; margin-bottom: 50px;">EDM Festival</h2>
+                <div class = "EDMS">
+                <div class="EDMpic" style="background: url(dj3.jpg); background-size: cover; background-position: 40 50px;"></div>
+                <h3>Music</h3>
+                <p sytle="letter-spacing :1px;">개성있는 아티스트들의 디제이 셋과 라이브 퍼포먼스 공연까지. <br>이 순간을 즐기세요!</p>
+                </div>
+                
+                <div class="EDMS">
+                <div class="EDMpic" style="background:url(peformance.jpg); background-size: cover;background-position: -78px"></div>
+                <h3>Peformance</h3>
+                <p sytle="letter-spacing :1px;">웅장한 무대와 화려한 조명 그리고 공간을 채우는 관객들.<br>함께 즐겨보세요.</p>
+                </div>
+                
+                <div class="EDMS" style="margin-right: 0px;">
+                <div class="EDMpic" style="background:url(raver2.jpg);background-size: cover;background-position: 0 00px;"></div>
+                    <h3>Ravers</h3>
+                <p sytle="letter-spacing :1px;">새로운 경험을 함께할 멋진 관객들! <br>함께 레이빙을 즐겨보세요</p>
+                </div>  
+            
+            </div>
+        </div>
+    </div></header>
+   
+    <footer><div class="wrap" style="width:100%;height: 100px; background-color: #282322;">
+        <p style="font-size: 20px; color:white;position: absolute;left:50%; transform:translateX(80%);top:40px;">Copyrightⓒ2019 EDMfestival All rights reserved.</p>
+    </div></footer>
+    <script type="text/javascript">
+        button.onclick = function(){
+                dj.style.animation = "fly 1s ease-in forwards";
+                box1.style.animation ="disappear 1s 1s forwards";
+                EDM.style.animation = "appear 1s 1s forwards";
+                page1.style.overflow = "visible";
+        }
+
+        
+
+        
+    </script>
+</body>
+</html>
